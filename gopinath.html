@@ -11,8 +11,14 @@ const eduprof = document.getElementById('educationprofession');
 eduprof.style.display = 'none';
 const jadh = document.getElementById('jadhagam');
 jadh.style.display = 'none';
+
+document.getElementById('pagetoptitle').innerHTML = 'Profile Info'
+
 }
 function showprofile(){
+
+document.getElementById('pagetoptitle').innerHTML = 'Profile Info'
+
 const prof = document.getElementById('profile');
 prof.style.display = 'initial';
 const cont = document.getElementById('contact');
@@ -41,6 +47,9 @@ box4.style.display = 'none';
 }, 6000);
 }
 function showcontact(){
+
+document.getElementById('pagetoptitle').innerHTML = 'Contact Details'
+
 const prof = document.getElementById('profile');
 prof.style.display = 'none';
 const cont = document.getElementById('contact');
@@ -69,6 +78,9 @@ box4.style.display = 'none';
 }, 6000);
 }
 function showeducationprofession(){
+
+document.getElementById('pagetoptitle').innerHTML = 'Education/Profession Details'
+
 const prof = document.getElementById('profile');
 prof.style.display = 'none';
 const cont = document.getElementById('contact');
@@ -97,6 +109,9 @@ box4.style.display = 'none';
 }, 6000);
 }
 function showjadhagam(){
+
+document.getElementById('pagetoptitle').innerHTML = 'Jadhagam Details'
+
 const prof = document.getElementById('profile');
 prof.style.display = 'none';
 const cont = document.getElementById('contact');
@@ -239,10 +254,12 @@ border-bottom: 0pt solid white;
 .tdtitle{
 font-weight: bold;
 color: #5A5A5A;
+width: 30%;
 }
 .tdinfo{
 font-weight: bold;
 color: darkblue;
+width: 70%;
 }
 
 </style>
@@ -281,6 +298,30 @@ box4.style.display = 'none';
 <td class="tdtitle">பெயர்</td> <td class="tdinfo">கோபிநாத்</td>
 </tr>
 <tr>
+<td class="tdtitle">Date of Birth</td> <td class="tdinfo">29.06.1995</td>
+</tr>
+<tr>
+<td class="tdtitle">பிறந்த தேதி</td> <td class="tdinfo">29.06.1995</td>
+</tr>
+<tr>
+<td class="tdtitle">Place</td> <td class="tdinfo">Trichy</td>
+</tr>
+<tr>
+<td class="tdtitle">ஊர்</td> <td class="tdinfo">திருச்சி</td>
+</tr>
+<tr>
+<td class="tdtitle">Gher Naav</td> <td class="tdinfo">Thippa</td>
+</tr>
+<tr>
+<td class="tdtitle">வீட்டு பெயர்</td> <td class="tdinfo">திப்பா</td>
+</tr>
+<tr>
+<td class="tdtitle">Siblings</td> <td class="tdinfo">Brothers: 1 , Sisters: 0</td>
+</tr>
+<tr>
+<td class="tdtitle" style="font-size:11px;">உடன் பிறந்தவர்கள்</td> <td class="tdinfo">சகோதரர்கள்: 1 , சகோதரிகள்: 0</td>
+</tr>
+<tr>
 <td class="tdtitle">Father's Name</td> <td class="tdinfo">Paranthaman</td>
 </tr>
 <tr>
@@ -294,28 +335,10 @@ box4.style.display = 'none';
 </tr>
 </tr>
 <tr>
-<td class="tdtitle">Bother's Name</td> <td class="tdinfo">Ragunath</td>
+<td class="tdtitle">Brother's Name</td> <td class="tdinfo">Ragunath</td>
 </tr>
 <tr>
 <td class="tdtitle">சகோதரன் பெயர்</td> <td class="tdinfo">ரகுநாத்</td>
-</tr>
-<tr>
-<td class="tdtitle">Address</td> <td class="tdinfo">23 B/1, Dakkar Bungalow, Woraiyur, Trichy-3</td>
-</tr>
-<tr>
-<td class="tdtitle">முகவரி</td> <td class="tdinfo">23 B/1, டாக்கர் பங்களா, உறையூர், திருச்சி-3</td>
-</tr>
-<tr>
-<td class="tdtitle">Address</td> <td class="tdinfo">23 B/1, Dakkar Bungalow, Woraiyur, Trichy-3</td>
-</tr>
-<tr>
-<td class="tdtitle">முகவரி</td> <td class="tdinfo">23 B/1, டாக்கர் பங்களா, உறையூர், திருச்சி-3</td>
-</tr>
-<tr>
-<td class="tdtitle">Address</td> <td class="tdinfo">23 B/1, Dakkar Bungalow, Woraiyur, Trichy-3</td>
-</tr>
-<tr>
-<td class="tdtitle">முகவரி</td> <td class="tdinfo">23 B/1, டாக்கர் பங்களா, உறையூர், திருச்சி-3</td>
 </tr>
 </tbody>
 </table>
@@ -323,7 +346,29 @@ box4.style.display = 'none';
 <table class="tableclass" id="contact">
 <tbody>
 <tr>
-<td class="tdtitle">Name</td> <td class="tdinfo">contact</td>
+<td class="tdtitle">Paranthaman பரந்தாமன்</td> <td class="tdinfo" style='font-size:20px; color:blue;'>
+<a href='tel:978937878'><img style='height:30px;' src='phonelogo.png'/></a>
+</td>
+</tr>
+<tr>
+<td class="tdtitle">Gopinath கோபிநாத்</td> <td class="tdinfo" style='font-size:20px; color:blue;'>
+<a href='tel:9750755753'><img style='height:30px;' src='phonelogo.png'/></a>&ensp;&ensp;&ensp;
+<a href='https://wa.me/9750755753'><img style='height:30px;' src='whatsapplogo.png'/></a>
+</td>
+</tr>
+<tr>
+<td class="tdtitle">Ragunath ரகுநாத்</td> <td class="tdinfo" style='font-size:20px; color:blue;'>
+<a href='tel:9486220391'><img style='height:30px;' src='phonelogo.png'/></a>&ensp;&ensp;&ensp;
+<a href='https://wa.me/9486220391'><img style='height:30px;' src='whatsapplogo.png'/></a>
+</td>
+</tr>
+<tr>
+<td class="tdtitle">Address</td> <td class="tdinfo">23 B/1, Dakkar Bungalow, Woraiyur,
+Trichy-3</td>
+</tr>
+<tr>
+<td class="tdtitle">முகவரி</td> <td class="tdinfo">23 B/1, டாக்கர் பங்களா, 
+உறையூர், திருச்சி-3</td>
 </tr>
 </tbody>
 </table>
