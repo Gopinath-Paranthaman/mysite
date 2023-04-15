@@ -1,6 +1,140 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function onloadfunction() {
+const prof = document.getElementById('profile');
+prof.style.display = 'initial';
+const cont = document.getElementById('contact');
+cont.style.display = 'none';
+const eduprof = document.getElementById('educationprofession');
+eduprof.style.display = 'none';
+const jadh = document.getElementById('jadhagam');
+jadh.style.display = 'none';
+}
+function showprofile(){
+const prof = document.getElementById('profile');
+prof.style.display = 'initial';
+const cont = document.getElementById('contact');
+cont.style.display = 'none';
+const eduprof = document.getElementById('educationprofession');
+eduprof.style.display = 'none';
+const jadh = document.getElementById('jadhagam');
+jadh.style.display = 'none';
+
+document.getElementById('btnprofile').className = 'dot'
+document.getElementById('btneduprof').className = 'dot2'
+document.getElementById('btnjadhagam').className = 'dot2'
+document.getElementById('btncontact').className = 'dot2'
+
+setTimeout(() => {
+const box = document.getElementsByClassName('dot')[0];
+const box4 = document.getElementsByClassName('dot2')[0];
+const box3 = document.getElementsByClassName('dot2')[1];
+const box2 = document.getElementsByClassName('dot2')[2];
+
+box.style.display = 'none';
+box2.style.display = 'none';
+box3.style.display = 'none';
+box4.style.display = 'none';
+
+}, 6000);
+}
+function showcontact(){
+const prof = document.getElementById('profile');
+prof.style.display = 'none';
+const cont = document.getElementById('contact');
+cont.style.display = 'initial';
+const eduprof = document.getElementById('educationprofession');
+eduprof.style.display = 'none';
+const jadh = document.getElementById('jadhagam');
+jadh.style.display = 'none';
+
+document.getElementById('btnprofile').className = 'dot2'
+document.getElementById('btneduprof').className = 'dot2'
+document.getElementById('btnjadhagam').className = 'dot2'
+document.getElementById('btncontact').className = 'dot'
+
+setTimeout(() => {
+const box = document.getElementsByClassName('dot')[0];
+const box4 = document.getElementsByClassName('dot2')[0];
+const box3 = document.getElementsByClassName('dot2')[1];
+const box2 = document.getElementsByClassName('dot2')[2];
+
+box.style.display = 'none';
+box2.style.display = 'none';
+box3.style.display = 'none';
+box4.style.display = 'none';
+
+}, 6000);
+}
+function showeducationprofession(){
+const prof = document.getElementById('profile');
+prof.style.display = 'none';
+const cont = document.getElementById('contact');
+cont.style.display = 'none';
+const eduprof = document.getElementById('educationprofession');
+eduprof.style.display = 'initial';
+const jadh = document.getElementById('jadhagam');
+jadh.style.display = 'none';
+
+document.getElementById('btnprofile').className = 'dot2'
+document.getElementById('btneduprof').className = 'dot'
+document.getElementById('btnjadhagam').className = 'dot2'
+document.getElementById('btncontact').className = 'dot2'
+
+setTimeout(() => {
+const box = document.getElementsByClassName('dot')[0];
+const box4 = document.getElementsByClassName('dot2')[0];
+const box3 = document.getElementsByClassName('dot2')[1];
+const box2 = document.getElementsByClassName('dot2')[2];
+
+box.style.display = 'none';
+box2.style.display = 'none';
+box3.style.display = 'none';
+box4.style.display = 'none';
+
+}, 6000);
+}
+function showjadhagam(){
+const prof = document.getElementById('profile');
+prof.style.display = 'none';
+const cont = document.getElementById('contact');
+cont.style.display = 'none';
+const eduprof = document.getElementById('educationprofession');
+eduprof.style.display = 'none';
+const jadh = document.getElementById('jadhagam');
+jadh.style.display = 'initial';
+
+document.getElementById('btnprofile').className = 'dot2'
+document.getElementById('btneduprof').className = 'dot2'
+document.getElementById('btnjadhagam').className = 'dot'
+document.getElementById('btncontact').className = 'dot2'
+
+setTimeout(() => {
+const box = document.getElementsByClassName('dot')[0];
+const box4 = document.getElementsByClassName('dot2')[0];
+const box3 = document.getElementsByClassName('dot2')[1];
+const box2 = document.getElementsByClassName('dot2')[2];
+
+box.style.display = 'none';
+box2.style.display = 'none';
+box3.style.display = 'none';
+box4.style.display = 'none';
+
+}, 6000);
+}
+function showMenu() {
+  const box = document.getElementsByClassName('dot')[0];
+  const box4 = document.getElementsByClassName('dot2')[0];
+const box3 = document.getElementsByClassName('dot2')[1];
+const box2 = document.getElementsByClassName('dot2')[2];
+box.style.display = 'initial';
+box2.style.display = 'initial';
+box3.style.display = 'initial';
+box4.style.display = 'initial';
+}
+</script>
 <style>
 body{
 font-family:  sans-serif;
@@ -113,37 +247,32 @@ color: darkblue;
 
 </style>
 </head>
-<body>
+<body onload="onloadfunction()">
 
 <script>
+
 setTimeout(() => {
-  const box = document.getElementsByClassName('dot')[0];
-  const box4 = document.getElementsByClassName('dot2')[0];
+const box = document.getElementsByClassName('dot')[0];
+const box4 = document.getElementsByClassName('dot2')[0];
 const box3 = document.getElementsByClassName('dot2')[1];
 const box2 = document.getElementsByClassName('dot2')[2];
 
-  // 👇️ removes element from DOM
-  box.style.display = 'none';
+box.style.display = 'none';
 box2.style.display = 'none';
 box3.style.display = 'none';
 box4.style.display = 'none';
 
+}, 3000);
 
-  // 👇️ hides element (still takes up space on page)
-  // box.style.visibility = 'hidden';
-}, 2000);
+
 </script>
-
-<div id="btnmenu">
-<button>Menu</button>
-</div>
 
 <div id="pagetop">
 <h3 id="pagetoptitle">Profile</h3>
 </div>
 
 <div id="infocontainer" class="div-scroll">
-<table class="tableclass">
+<table class="tableclass" id="profile">
 <tbody>
 <tr>
 <td class="tdtitle">Name</td> <td class="tdinfo">Gopinath</td>
@@ -190,27 +319,52 @@ box4.style.display = 'none';
 </tr>
 </tbody>
 </table>
+
+<table class="tableclass" id="contact">
+<tbody>
+<tr>
+<td class="tdtitle">Name</td> <td class="tdinfo">contact</td>
+</tr>
+</tbody>
+</table>
+
+<table class="tableclass" id="educationprofession">
+<tbody>
+<tr>
+<td class="tdtitle">Name</td> <td class="tdinfo">Education Profession</td>
+</tr>
+</tbody>
+</table>
+
+<table class="tableclass" id="jadhagam">
+<tbody>
+<tr>
+<td class="tdtitle">Name</td> <td class="tdinfo">Jadhagam</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 
 <div style="text-align:left; vertical-align: middle;">
-<span class="btnmenu" style="right: 10px; bottom: 20px;"><h3>Menu</h3></span>
+<span id="btnmenu" class="btnmenu" onclick="showMenu()" style="right: 10px; bottom: 20px;"><h3>Menu</h3></span>
 </div>
 
 <div style="text-align:left; vertical-align: middle;">
-<span class="dot2" style="right: 10px; bottom: 20px;"><h3>Contact</h3></span>
+<span id="btncontact" class="dot2" onclick="showcontact()" style="right: 10px; bottom: 20px;"><h3>Contact</h3></span>
 </div>
 
 <div style="text-align:left; vertical-align: middle;">
-<span class="dot2" style="right: 10px; bottom: 90px;"><h3>Jadhagam</h3></span>
+<span id="btnjadhagam" class="dot2" onclick="showjadhagam()" style="right: 10px; bottom: 90px;"><h3>Jadhagam</h3></span>
 </div>
 
 <div style="text-align:left; vertical-align: middle;">
-<span class="dot2" style="right: 10px; bottom: 160px; "><h3>Education/
+<span id="btneduprof" class="dot2" onclick="showeducationprofession()" style="right: 10px; bottom: 160px; "><h3>Education/
 Profession</h3></span>
 </div>
 
 <div style="text-align:left; vertical-align: middle;">
-<span class="dot" style="right: 10px; bottom: 230px;"><h3>Profile</h3></span>
+<span id="btnprofile" class="dot" onclick="showprofile()" style="right: 10px; bottom: 230px;"><h3>Profile</h3></span>
 </div>
 
 </body>
