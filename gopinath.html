@@ -3,31 +3,159 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{
-
+font-family:  sans-serif;
+background-image: linear-gradient(180deg, #ffc0cb, #ADD8E6);
 }
 .dot {
-width: 20%;
-height: 20%;
-background-image: linear-gradient(45deg, #00008b, #00FF00);
+width: 60px;
+height: 60px;
+
+background-color: #325aa8;
 border-radius: 50%;
 display: inline-block;
 position: fixed;
-right: 10px;
-bottom: 10px;
+box-shadow: 0px 0px 10px 0px #39FF14;
+z-index: 5;
 }
-.dot h3{
+.dot h3, .dot2 h3{
 position:absolute;
 top:50%; left:50%;
 transform: translate(-50%, -50%);
 margin:0;
-font-size: 15px;
+font-size: 10px;
+color: white;
+z-index: 5;
+}
+.dot2{
+width: 60px;
+height: 60px;
+background-color: lightgrey;
+border-radius: 50%;
+display: inline-block;
+position: fixed;
+box-shadow: 0px 0px 10px 0px blue;
+z-index: 5;
+}
+.dot2 h3{
+color: darkblue;
+z-index: 5;
+}
+#pagetop{
+position: fixed;
+z-index: 4;
+font-size: 18px;
+background-color: #325aa8;
+color: #282A35;
+font-family: 'Source Sans Pro', sans-serif;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 7%;
+text-align: center;
+}
+#pagetoptitle{
+transform: translate(0%, -50%);
+padding-left: 0px;
 color: white;
 }
+#infocontainer{
+position: fixed;
+z-index: 4;
+font-size: 12px;
+background-color: none;
+color: #282A35;
+font-family: 'Source Sans Pro', sans-serif;
+position: fixed;
+top: 9%;
+left: 3%;
+width: 75%;
+height: 90%;
+text-align: center;
+}
+
+.tableclass{
+padding-left: 15px;
+width:100%;
+border-collapse: collapse;
+font-size: 12px;
+}
+
+.tableclass tr{
+height: 60px;
+border-bottom: 0pt solid white;
+}
+.tdtitle{
+font-weight: bold;
+color: #5A5A5A;
+}
+.tdinfo{
+font-weight: bold;
+color: darkblue;
+}
+
 </style>
 </head>
 <body>
+
+<div id="pagetop">
+<h3 id="pagetoptitle">Profile</h3>
+</div>
+
+<div id="infocontainer">
+<table class="tableclass">
+<tbody>
+<tr>
+<td class="tdtitle">Name</td> <td class="tdinfo">Gopinath</td>
+</tr>
+<tr>
+<td class="tdtitle">பெயர்</td> <td class="tdinfo">கோபிநாத்</td>
+</tr>
+<tr>
+<td class="tdtitle">Father's Name</td> <td class="tdinfo">Paranthaman</td>
+</tr>
+<tr>
+<td class="tdtitle">தந்தை பெயர்</td> <td class="tdinfo">பரந்தாமன்</td>
+</tr>
+<tr>
+<td class="tdtitle">Mother's Name</td> <td class="tdinfo">Varalakshmi</td>
+</tr>
+<tr>
+<td class="tdtitle">தாய் பெயர்</td> <td class="tdinfo">வரலக்ஷ்மி</td>
+</tr>
+</tr>
+<tr>
+<td class="tdtitle">Bother's Name</td> <td class="tdinfo">Ragunath</td>
+</tr>
+<tr>
+<td class="tdtitle">சகோதரன் பெயர்</td> <td class="tdinfo">ரகுநாத்</td>
+</tr>
+<tr>
+<td class="tdtitle">Address</td> <td class="tdinfo">23 B/1, Dakkar Bungalow, Woraiyur, Trichy-3</td>
+</tr>
+<tr>
+<td class="tdtitle">முகவரி</td> <td class="tdinfo">23 B/1, டாக்கர் பங்களா, உறையூர், திருச்சி-3</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 <div style="text-align:left; vertical-align: middle;">
-<span class="dot"><h3>Contact</h3></span>
-<div>
+<span class="dot2" style="right: 10px; bottom: 20px;"><h3>Contact</h3></span>
+</div>
+
+<div style="text-align:left; vertical-align: middle;">
+<span class="dot2" style="right: 10px; bottom: 90px;"><h3>Jadhagam</h3></span>
+</div>
+
+<div style="text-align:left; vertical-align: middle;">
+<span class="dot2" style="right: 10px; bottom: 160px; "><h3>Education/
+Profession</h3></span>
+</div>
+
+<div style="text-align:left; vertical-align: middle;">
+<span class="dot" style="right: 10px; bottom: 230px;"><h3>Profile</h3></span>
+</div>
+
 </body>
 </html>
