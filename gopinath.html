@@ -49,6 +49,7 @@ box.style.display = 'none';
 box2.style.display = 'none';
 box3.style.display = 'none';
 box4.style.display = 'none';
+document.getElementById('menupointer').innerHTML = '&#9650;';
 
 }, 6000);
 }
@@ -88,6 +89,7 @@ box.style.display = 'none';
 box2.style.display = 'none';
 box3.style.display = 'none';
 box4.style.display = 'none';
+document.getElementById('menupointer').innerHTML = '&#9650;';
 
 }, 6000);
 }
@@ -125,6 +127,7 @@ box.style.display = 'none';
 box2.style.display = 'none';
 box3.style.display = 'none';
 box4.style.display = 'none';
+document.getElementById('menupointer').innerHTML = '&#9650;';
 
 }, 6000);
 }
@@ -163,6 +166,7 @@ box.style.display = 'none';
 box2.style.display = 'none';
 box3.style.display = 'none';
 box4.style.display = 'none';
+document.getElementById('menupointer').innerHTML = '&#9650;';
 
 }, 6000);
 }
@@ -172,10 +176,23 @@ function showMenu() {
 const box3 = document.getElementsByClassName('dot2')[1];
 const box2 = document.getElementsByClassName('dot2')[2];
 
+const pointer = document.getElementById('menupointer');
+
+if(box.style.display != 'initial'){
+pointer.innerHTML = '&#9660;';
 box.style.display = 'initial';
 box2.style.display = 'initial';
 box3.style.display = 'initial';
 box4.style.display = 'initial';
+}
+else {
+pointer.innerHTML = '&#9650;';
+box.style.display = 'none';
+box2.style.display = 'none';
+box3.style.display = 'none';
+box4.style.display = 'none';
+}
+
 }
 </script>
 <style>
@@ -375,8 +392,8 @@ box4.style.display = 'none';
 </tr>
 <tr>
 <td class="tdtitle">Address<br/>முகவரி</td> <td class="tdinfo">23 B/1, Dakkar Bungalow, Woraiyur,
-Trichy-3<br/>23 B/1, டாக்கர் பங்களா, 
-உறையூர், திருச்சி-3</td>
+<br/>Trichy-3<br/>23 B/1, டாக்கர் பங்களா, 
+உறையூர், <br/>திருச்சி-3</td>
 </tr>
 <tr>
 <td class="tdtitle">Location</td> <td class="tdinfo">
@@ -480,7 +497,7 @@ Olympia Tech Park, Fortius Block, 3rd Floor, Plot No.1, 100 Feet Road, SIDCO Ind
 </div>
 
 <div style="text-align:center; vertical-align: middle;">
-<span id="btnmenu" class="btnmenu" onclick="showMenu()" style="right: 10px; bottom: 20px;"><h3>&#9650;<br/>Menu</h3></span>
+<span id="btnmenu" class="btnmenu" onclick="showMenu()" style="right: 10px; bottom: 20px;"><h3><span id='menupointer'>&#9650;</span><br/>Menu</h3></span>
 </div>
 
 <div style="text-align:left; vertical-align: middle;">
